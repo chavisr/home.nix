@@ -42,6 +42,6 @@ in
     gcc
   ];
 
-  home-manager.backupFileExtension = "backup";
+  home.backupFileExtension = "backup";
 
 }

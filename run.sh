@@ -1,5 +1,5 @@
 #!/bin/sh
 
-set -euo | pipefial
+set -euo | pipefail
 
 home-manager switch --flake .#chavi -b backup

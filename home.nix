@@ -18,8 +18,7 @@ in
   programs.bash = {
     enable = true;
     shellAliases = {
-      btw = "echo i use nixos-btw";
-      nrs = "sudo nixos-rebuild switch --flake ~/dotfiles#nix-btw";
+      btw = "echo i use nix-btw";
     };
     initExtra = ''
       	  export PS1="\[\033[32m\]\u@\h \[\e[1;34m\]\w\[\e[33m\] \[\e[1;35m\]>\[\e[0m\] "
@@ -40,6 +39,8 @@ in
     nixpkgs-fmt
     nodejs
     gcc
+    jq
+    yq
   ];
 
 }

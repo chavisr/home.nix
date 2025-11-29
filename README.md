@@ -10,6 +10,7 @@ source ~/.nix-profile/etc/profile.d/nix.sh
 git clone https://github.com/chavisr/dotfiles
 
 # enjoy :) 
+git clone https://github.com/chavisr/nix
 nix run github:nix-community/home-manager -- switch --flake .#chavi -b backup
 # or
 nix run github:nix-community/home-manager -- switch --flake github:chavisr/nix#chavi -b backup --no-write-lock-file

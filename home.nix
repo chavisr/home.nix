@@ -47,6 +47,8 @@ in
 
     export PS1='\[\033[32m\]\u@\h \[\e[1;34m\]\w\[\e[33m\]$(__git_ref)$(__git_status) \[\e[1;35m\]>\[\e[0m\] '
     export EDITOR=nvim
+
+    source ~/.nix-profile/etc/profile.d/nix.sh
     '';
   };
 

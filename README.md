@@ -1,4 +1,4 @@
-# Home.nix
+# home.nix
 
 ```bash
 # install nix - https://nixos.wiki/wiki/Nix_Installation_Guide
@@ -11,8 +11,8 @@ mkdir -p $HOME/.config/nix && echo 'experimental-features = nix-command flakes' 
 git clone https://github.com/chavisr/dotfiles
 
 # enjoy :) 
-git clone https://github.com/chavisr/nix
+git clone https://github.com/chavisr/home.nix && cd home.nix
 nix run github:nix-community/home-manager -- switch --flake .#chavi -b backup
 # or
-nix run github:nix-community/home-manager -- switch --flake github:chavisr/nix#chavi -b backup --no-write-lock-file
+nix run github:nix-community/home-manager -- switch --flake github:chavisr/home.nix#chavi -b backup --no-write-lock-file
 ```

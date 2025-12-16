@@ -1,4 +1,4 @@
-# Nix
+# Home.nix
 
 ```bash
 # install nix - https://nixos.wiki/wiki/Nix_Installation_Guide
